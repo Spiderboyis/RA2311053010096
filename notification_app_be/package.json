@@ -1,0 +1,24 @@
+{
+  "name": "notification_app_be",
+  "version": "1.0.0",
+  "description": "Priority inbox microservice for Affordmed evaluation",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.19.0",
+    "logging_middleware": "file:../logging_middleware",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.20.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.0.0"
+  }
+}
